@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--загружаем jquery чтобы делать лукапы scope-->
+    <script src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+<div class="panel-group">
+    <div class="panel-group" >
+        <language-card ng-repeat="lang in languages" lang="lang"></language-card>
+    </div>
+</div>
+
+</body>
+
+</html>
