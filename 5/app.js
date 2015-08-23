@@ -21,6 +21,15 @@ app.controller('MainCtrl', function($scope) {
             src: 'http://goo.gl/gOsRK3'
         }
     ];
+
+    $scope.someText = 'sample text';
+
+    $scope.source = 'a';
+    $scope.target = '*';
+
+    $scope.customReplace = function(a, b, c) {
+        return a.split(b).join(c);
+    }
 });
 
 app.directive('languageCard', function(){
