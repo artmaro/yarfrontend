@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Дизайн методов обновления ресурса в CRUD REST-сервисах</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    
+
+    <!-- Custom fonts for this template -->
+
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    
+
+    <!-- Custom styles for this template -->
+
+    <link href="../css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+
+    <div class="container">
+
+        <a class="navbar-brand js-scroll-trigger" href="/"><img class="yappi-logo" src="img/yappi-logo.png"></a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+            Menu
+
+            <i class="fa fa-bars"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="navbar-nav text-uppercase ml-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link js-scroll-trigger" href="#services">Подать доклад</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Программа</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link js-scroll-trigger" href="#about">Регистрация</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link js-scroll-trigger" href="#team">Спикеры</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link js-scroll-trigger" href="yappidays2017.html">YappiDays'17</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Header -->
+
+<header class="masthead">
+
+    <div class="container">
+
+        <div class="intro-text">
+
+            <div class="intro-lead-in">Конференция разработчиков YappiDays</div>
+
+            <div class="intro-heading text-uppercase">3 ноября 2018 <br> Ярославль КЗЦ "Миллениум"</div>
+
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Регистрация</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="container">
+    <div class="row">
+        <div>
+            <h2 class="header-with-margin">Дизайн методов обновления ресурса в CRUD REST-сервисах</h2>
+            Во многих проектах ставится задача организовать доступ к ресурсу через REST API в т.ч. реализовать методы для обновления ресурса. К сожалению из-за отсутствия стандарта обновление ресурса зачастую до сих пор ассоциируется только с HTTP методом PUT.
+
+            В своем докладе я расскажу:
+            <ol>
+                <li>Почему HTTP PUT в общем случае - не лучший метод для обновления ресурса. В каких случаях его действительно нужно применять.</li>
+                <li>Об HTTP методе PATCH.</li>
+                <li>Об HTTP методе POST для обновления ресурса.</li>
+            <li>О проблеме параллельного обновления ресурса.</li>
+            </ol>
+            <b>План:</b>
+            <ol>
+                <li>HTTP PUT.</li>
+                <ol>
+                <li>             HTPP PUT - замена ресурса по указанному адресу.</li>
+                <li>             Ограничения HTTP PUT // Расширения состава атрибутов влечет правку клиентов, идемпотентность, кэширование. Практические грабли, если проигнорировать ограничения: Nginx, Chrome.</li>
+                <li>             Когда действительно стоит использовать HTTP PUT. // Пример с книжной полкой, пример с избранным.</li>
+                </ol>
+                <li>             HTTP PATCH.</li>
+                <ol>
+                <li>             HTTP PATCH - частичное обновление ресурса.</li>
+                <li>             JSON Patch.</li>
+                <li>             Пример JSON Patch.</li>
+                <li>             JSON Merge Patch.</li>
+                <li>             Пример JSON Merge Patch.</li>
+                <li>             HTTP PATCH - универсальный метод для обновления ресурса.</li>
+                </ol>
+                <li>             HTTP POST для обновления ресурса.</li>
+                <ol>
+                <li>             Пример с асинхронным обновлением. // Пример с обновлением физически занимающем минуты.</li>
+                <li>             Пример обновлением-бизнес-операцией. // Пример с неявным изменением состояния документа.</li>
+                </ol>
+                <li>             Проблема параллельного обновления ресурса.</li>
+                <ol>
+                <li>             Описание проблемы. // 2 клиента обновили один и тот-же ресурс и оба подумали, что их данные попали на сервер. Пример - задача в трекере с атрибутом "assignedTo".</li>
+                <li>             Решение проблемы с помощью ETag и If-Match.</li>
+                </ol>
+            </ol>
+            <br>
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/Ack47C80RBg" frameborder="0" gesture="media" allowfullscreen></iframe>
+            <br>
+            <a href="wp-content/uploads/2017/09/Дизайн_методов_обновления_ресурса.pptx">Презентация</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer> <!--VK and telegram links, link to privacy policy TODO-->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <span class="copyright">YappiDays 2018</span>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <ul class="list-inline social-buttons">
+
+                    <li class="list-inline-item">
+
+                        <a target="_blank" href="https://vk.com/yappidays">
+
+                            <i class="fa fa-vk"></i>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <ul class="list-inline quicklinks">
+
+                    <li class="list-inline-item">
+
+                        <a href="/privacy.html">Политика обработки персональных данных</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="../vendor/jquery/jquery.min.js"></script>
+
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- Plugin JavaScript -->
+
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+<!-- Contact form JavaScript -->
+
+<script src="../js/jqBootstrapValidation.js"></script>
+
+<script src="../js/contact_me.js"></script>
+
+<!--<script src="../js/yd.js"></script>-->
+
+
+
+<!-- Custom scripts for this template -->
+
+<script src="../js/agency.js"></script>
+
+</body>
+
+</html>
