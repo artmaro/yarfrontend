@@ -731,3 +731,10 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+#ytWidget {
+  z-index: 2000;
+  position: fixed;
+  top: 80px;
+  left: 24px;
+}

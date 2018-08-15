@@ -111,6 +111,7 @@ function generateHtmlFile(sourceFile, targetFile) {
 
 function generateHtml() {
     generateHtmlFile('html/index-template.html', 'index.html');
+    generateHtmlFile('html/index-en-template.html', 'index-en.html');
     generateHtmlFile('html/privacy-template.html', 'privacy.html');
     generateHtmlFile('html/cfp-template.html', 'cfp.html');
     generateHtmlFile('html/yappidays2017-template.html', 'yappidays2017.html');
