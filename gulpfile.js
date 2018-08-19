@@ -114,7 +114,6 @@ function generateHtml() {
     generateHtmlFile('html/index-en-template.html', 'index-en.html');
     generateHtmlFile('html/privacy-template.html', 'privacy.html');
     generateHtmlFile('html/cfp-template.html', 'cfp.html');
-    generateHtmlFile('html/cfp-en-template.html', 'cfp-en.html');
     generateHtmlFile('html/yappidays2017-template.html', 'yappidays2017.html');
     generateHtmlFile('html/yappidays2017-talks/yappidays2017-hadoop.html', 'yappidays2017-hadoop.html');
     generateHtmlFile('html/yappidays2017-talks/yappidays2017-ci.html', 'yappidays2017-ci.html');
