@@ -12,3 +12,37 @@
 .row-top-spacing {
   margin-top: 50px;
 }
+
+
+.img-fluid {
+  width: 350px;
+}
+.cool-text {
+	margin-top: 2em;
+    font-size: 1.2em;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
+}
+.cool-text a {
+	font-weight: bold;
+}
+.cool-text tr {
+    line-height: 3.5rem;
+    border-top: 1px solid #eee;
+    border-top-width: 1px;
+    width: 80%;
+}
+.cool-text tr:after {
+    content: "";
+    /* left: 0; */
+    bottom: 10px;
+    height: 1px;
+    width: 40px;
+    /* border-bottom: 1px solid red; */
+    display: inline-block;
+    /* margin-right: 34px; */
+    background: white;
+    margin-top: -1px;
+}
+.cool-text tbody tr:first-child {
+	border-top: none;
+}
