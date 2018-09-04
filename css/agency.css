@@ -254,7 +254,6 @@ header.masthead .intro-text .intro-heading {
 .portfolio-item {
   margin: 0 0 15px;
   right: 0;
-  border-radius: 30px;
 }
 
 .portfolio-item .portfolio-link {
@@ -274,7 +273,6 @@ header.masthead .intro-text .intro-heading {
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   width: 100%;
-  border-radius: 3px 3px 0 0;
 }
 
 .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -310,7 +308,6 @@ header.masthead .intro-text .intro-heading {
   max-width: 400px;
   padding: 25px;
   text-align: center;
-  border-radius: 0 0 3px 3px;
 }
 
 .portfolio-item .portfolio-caption h4 {
@@ -750,7 +747,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   width: 350px;
   height: 350px;
   object-fit: cover;
-  border-radius: 3px 3px 0 0;
 }
 
 .cool-text {
