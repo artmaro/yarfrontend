@@ -1,71 +1,74 @@
-// Styling for the portfolio section
-#portfolio {
-  .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-    .portfolio-link {
-      position: relative;
-      display: block;
-      max-width: 400px;
-      margin: 0 auto;
-      cursor: pointer;
-      .portfolio-hover {
+// Styling for the portfolio section#portfolio {
+.portfolio-item {
+
+  margin: 0 0 15px;
+  right: 0;
+
+  .portfolio-link {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    position: relative;
+
+    .portfolio-hover {
+      background: fade-out($primary,.1);
+      height: 100%;
+      -moz-transition: all ease 0.5s;
+      opacity: 0;
+      position: absolute;
+      transition: all ease 0.5s;
+      -webkit-transition: all ease 0.5s;
+      width: 100%;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .portfolio-hover-content {
+        color: white;
+        font-size: 20px;
+        height: 20px;
+        margin-top: -12px;
         position: absolute;
+        text-align: center;
+        top: 50%;
         width: 100%;
-        height: 100%;
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        transition: all ease 0.5s;
-        opacity: 0;
-        background: fade-out($primary, .1);
-        &:hover {
-          opacity: 1;
-        }
-        .portfolio-hover-content {
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          width: 100%;
-          height: 20px;
+        i {
           margin-top: -12px;
-          text-align: center;
-          color: white;
-          i {
-            margin-top: -12px;
-          }
-          h3,
-          h4 {
-            margin: 0;
-          }
         }
-      }
-    }
-    .portfolio-link-square {
-      background-color: white;
-      height: 290px; /*TODO fix style on small and large screen*/
-    }
-    .portfolio-caption {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 25px;
-      text-align: center;
-      background-color: $white;
-      h4 {
-        margin: 0;
-        text-transform: none;
-      }
-      p {
-        font-size: 16px;
-        font-style: italic;
-        margin: 0;
-        @include serif-font;
+        h3, h4 {
+          margin: 0;
+        }
       }
     }
   }
-  * {
-    z-index: 2;
+  .portfolio-link-square {
+    background-color: white;
+  }
+  .portfolio-caption {
+    background-color: $white;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 25px;
+    text-align: center;
+
+    h4 {
+      margin: 0;
+      text-transform: none;
+    }
+    p {
+      @include serif-font;
+      font-size: 16px;
+      font-style: italic;
+      margin: 0;
+    }
   }
 }
+* {
+  z-index: 2;
+}
+
 @media(min-width:767px) {
   #portfolio {
     .portfolio-item {
@@ -73,7 +76,6 @@
     }
   }
 }
-
 .portfolio-modal {
   padding-right: 0px !important;
   .modal-dialog {
@@ -82,7 +84,6 @@
   }
   .modal-content {
     padding: 100px 0;
-    /*text-align: center;*/
     text-align: justify;
     text-justify: inter-word;
     h2 {
@@ -93,14 +94,14 @@
       margin-bottom: 30px;
     }
     p.item-intro {
+      @include serif-font;
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
-      @include serif-font;
     }
     ul.list-inline {
-      margin-top: 0;
       margin-bottom: 30px;
+      margin-top: 0;
     }
     img {
       margin-bottom: 30px;
@@ -110,49 +111,42 @@
     }
   }
   .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
     background-color: transparent;
+    cursor: pointer;
+    height: 75px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 75px;
     &:hover {
       opacity: 0.3;
     }
     .lr {
-      /* Safari and Chrome */
-      z-index: 1051;
-      width: 1px;
+      background-color: $gray-900;
       height: 75px;
       margin-left: 35px;
-      /* IE 9 */
-      -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      background-color: $gray-900;
+      -webkit-transform: rotate(45deg);
+      width: 1px;
+      z-index: 1051;
       .rl {
-        /* Safari and Chrome */
-        z-index: 1052;
-        width: 1px;
+        background-color: $gray-900;
         height: 75px;
-        /* IE 9 */
-        -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        background-color: $gray-900;
+        -webkit-transform: rotate(90deg);
+        width: 1px;
+        z-index: 1052;
       }
     }
   }
   .modal-backdrop {
-
   }
 }
-
 .speaker-photo-small {
   width: 200px;
 }
-
 .speaker-photo {
   width: 400px;
 }

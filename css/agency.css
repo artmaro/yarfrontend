@@ -251,81 +251,78 @@ header.masthead .intro-text .intro-heading {
   width: 22px;
 }
 
-#portfolio .portfolio-item {
-  right: 0;
+.portfolio-item {
   margin: 0 0 15px;
+  right: 0;
 }
 
-#portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
-  max-width: 400px;
-  margin: 0 auto;
+.portfolio-item .portfolio-link {
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  position: relative;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
+.portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
+  height: 100%;
+  -moz-transition: all ease 0.5s;
+  opacity: 0;
+  position: absolute;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  width: 100%;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+.portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  color: white;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
   height: 20px;
   margin-top: -12px;
+  position: absolute;
   text-align: center;
-  color: white;
+  top: 50%;
+  width: 100%;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3, .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-link-square {
+.portfolio-item .portfolio-link-square {
   background-color: white;
-  height: 290px;
-  /*TODO fix style on small and large screen*/
 }
 
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
+.portfolio-item .portfolio-caption {
+  background-color: #fff;
   margin: 0 auto;
+  max-width: 400px;
   padding: 25px;
   text-align: center;
-  background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+.portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+.portfolio-item .portfolio-caption p {
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-style: italic;
   margin: 0;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#portfolio * {
+* {
   z-index: 2;
 }
 
@@ -346,7 +343,6 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-content {
   padding: 100px 0;
-  /*text-align: center;*/
   text-align: justify;
   text-justify: inter-word;
 }
@@ -361,15 +357,15 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content p.item-intro {
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
-  margin-top: 0;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .portfolio-modal .modal-content img {
@@ -381,13 +377,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .close-modal {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
   background-color: transparent;
+  cursor: pointer;
+  height: 75px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 75px;
 }
 
 .portfolio-modal .close-modal:hover {
@@ -395,28 +391,24 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .close-modal .lr {
-  /* Safari and Chrome */
-  z-index: 1051;
-  width: 1px;
+  background-color: #212529;
   height: 75px;
   margin-left: 35px;
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #212529;
+  -webkit-transform: rotate(45deg);
+  width: 1px;
+  z-index: 1051;
 }
 
 .portfolio-modal .close-modal .lr .rl {
-  /* Safari and Chrome */
-  z-index: 1052;
-  width: 1px;
+  background-color: #212529;
   height: 75px;
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  background-color: #212529;
+  -webkit-transform: rotate(90deg);
+  width: 1px;
+  z-index: 1052;
 }
 
 .speaker-photo-small {

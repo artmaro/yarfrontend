@@ -5,7 +5,7 @@
   "description": "Agency is a one page HTML theme for Bootstrap.",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp html"
+    "build": "gulp"
   },
   "keywords": [
     "css",
