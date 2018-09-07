@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const { generateHtmlPlugins } = require('./generateHtmlPlugins');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = env => {
   const ENV = process.env.NODE_ENV || 'development';
@@ -10,10 +12,13 @@ module.exports = env => {
 
   const config = {
     devServer: {
-      port: PORT
+      port: PORT,
+      hot: true,
+      historyApiFallback: true
     },
     entry: {
-      app: ['./src/index.js']
+      'nav-bar': './src/styles/nav-bar.less',
+      header: './src/styles/header.less'
     },
     context: path.resolve(path.join(__dirname, '.')),
     target: 'web',
@@ -23,20 +28,18 @@ module.exports = env => {
       chunkFilename: '[name].chunk.js',
       publicPath: '/'
     },
-    resolve: {
-      alias: {
-        templates: path.resolve(path.join(__dirname, './src/templates'))
-      }
-    },
     module: {
       rules: [
         {
-          test: /\.less$/,
-          use: ['style-loader', 'less-loader', 'postcss-loader']
-        },
-        {
           test: /\.css$/,
           loader: ['style-loader', 'css-loader', 'postcss-loader']
+        },
+        {
+          test: /\.less$/,
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: ['css-loader', 'postcss-loader', 'less-loader'],
+          }),
         },
         {
           test: /\.html$/,
@@ -46,6 +49,11 @@ module.exports = env => {
       ]
     },
     plugins: [
+      new ExtractTextPlugin({
+        filename: 'css/[name].css',
+        allChunks: true,
+      }),
+      new CopyWebpackPlugin(),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(ENV)
       })
