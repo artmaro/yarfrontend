@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const { generateHtmlPlugins } = require('./generateHtmlPlugins');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = env => {
   const ENV = process.env.NODE_ENV || 'development';
@@ -17,6 +16,9 @@ module.exports = env => {
       historyApiFallback: true
     },
     entry: {
+      main: './src/styles/main.less',
+      themes: './src/styles/themes.less',
+      grid: './src/styles/grid.less',
       'nav-bar': './src/styles/nav-bar.less',
       header: './src/styles/header.less'
     },
@@ -45,6 +47,10 @@ module.exports = env => {
           test: /\.html$/,
           include: path.resolve(__dirname, 'src/html/includes'),
           use: ['raw-loader']
+        },
+        {
+          test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+          use: 'url-loader?limit=100000'
         }
       ]
     },
@@ -53,7 +59,6 @@ module.exports = env => {
         filename: 'css/[name].css',
         allChunks: true,
       }),
-      new CopyWebpackPlugin(),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(ENV)
       })

@@ -1,7 +1,39 @@
+@nav-height: 80px;
+@links-color: white;
+
 .nav-bar {
   position: fixed;
+  width: 100%;
+  height: @nav-height;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+
+  .container {
+    display: flex;
+    height: @nav-height;
+    padding: 20px;
+
+    .logo {
+      width: auto;
+      height: 100%;
+
+      img {
+        height: @nav-height;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      .link {
+        line-height: @nav-height;
+        text-transform: uppercase;
+        color: @links-color
+      }
+    }
+  }
 }
