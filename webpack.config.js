@@ -85,6 +85,10 @@ module.exports = env => {
           {
             from: './browserconfig.xml',
             to: './browserconfig.xml'
+          },
+          {
+            from: './CNAME',
+            to: './CNAME'
           }
         ]
       ),
