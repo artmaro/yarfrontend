@@ -1,0 +1,152 @@
+// Styling for the portfolio section#portfolio {
+.portfolio-item {
+
+  margin: 0 0 15px;
+  right: 0;
+
+  .portfolio-link {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    position: relative;
+
+    .portfolio-hover {
+      background: fade-out($primary,.1);
+      height: 100%;
+      -moz-transition: all ease 0.5s;
+      opacity: 0;
+      position: absolute;
+      transition: all ease 0.5s;
+      -webkit-transition: all ease 0.5s;
+      width: 100%;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .portfolio-hover-content {
+        color: white;
+        font-size: 20px;
+        height: 20px;
+        margin-top: -12px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        i {
+          margin-top: -12px;
+        }
+        h3, h4 {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .portfolio-link-square {
+    background-color: white;
+  }
+  .portfolio-caption {
+    background-color: $white;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 25px;
+    text-align: center;
+
+    h4 {
+      margin: 0;
+      text-transform: none;
+    }
+    p {
+      @include serif-font;
+      font-size: 16px;
+      font-style: italic;
+      margin: 0;
+    }
+  }
+}
+* {
+  z-index: 2;
+}
+
+@media(min-width:767px) {
+  #portfolio {
+    .portfolio-item {
+      margin: 0 0 30px;
+    }
+  }
+}
+.portfolio-modal {
+  padding-right: 0px !important;
+  .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .modal-content {
+    padding: 100px 0;
+    text-align: justify;
+    text-justify: inter-word;
+    h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    p.item-intro {
+      @include serif-font;
+      font-size: 16px;
+      font-style: italic;
+      margin: 20px 0 30px;
+    }
+    ul.list-inline {
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+    img {
+      margin-bottom: 30px;
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+  .close-modal {
+    background-color: transparent;
+    cursor: pointer;
+    height: 75px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 75px;
+    &:hover {
+      opacity: 0.3;
+    }
+    .lr {
+      background-color: $gray-900;
+      height: 75px;
+      margin-left: 35px;
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      width: 1px;
+      z-index: 1051;
+      .rl {
+        background-color: $gray-900;
+        height: 75px;
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        width: 1px;
+        z-index: 1052;
+      }
+    }
+  }
+  .modal-backdrop {
+  }
+}
+.speaker-photo-small {
+  width: 200px;
+}
+.speaker-photo {
+  width: 400px;
+}
