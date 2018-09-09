@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>«SQL on Hadoop» на примере Apache Drill</title>
+
+  <%= require('html-loader!../header-scripts.html') %>
+
+</head>
+
+<body id="page-top">
+
+<%= require('html-loader!../header.html') %>
+
+<%= require('html-loader!../landing-intro.html') %>
+
+<div class="container">
+  <div class="row">
+    <div>
+      <h2 class="header-with-margin">«SQL on Hadoop» на примере Apache Drill</h2>
+      В рамках доклада будут охвачены следующие вопросы:
+
+      1. Зачем нужен «SQL on Hadoop»?
+      2. Краткий обзор технологий, реализующих «SQL on Hadoop»:
+      Batch SQL, Interactive SQL, Operational SQL.
+      3. Сравнение реализации «SQL on Hadoop» в Apache Drill и Apache Spark.
+      4. Способы и форматы хранения данных в Big Data решениях.
+      <ul>
+        <li>Parquet(компрессия данных в этом формате), JSON, CSV</li>
+        <li>SELECT по директории,</li>
+        <li>Apache Kudu, Apache HBase</li>
+        <li>Возможность подключения СУБД как источников данных. Примеры запросов к ним</li>
+      </ul>
+      5. Возможности расширения функционала Apache Drill.
+      <ul>
+        <li>Storage Plugins, Format Plugins</li>
+        <li>Использование REST-сервиса в качестве источник данных</li>
+      </ul>
+
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/wyAzJMLZSN0" frameborder="0" gesture="media" allowfullscreen></iframe> <br>
+      <a href="content/2017/SQL_on_Hadoop_clean.pptx">Презентация</a>
+    </div>
+  </div>
+</div>
+
+<%= require('html-loader!../footer.html') %>
+
+<%= require('html-loader!../footer-scripts.html') %>
+
+</body>
+
+</html>
