@@ -10,15 +10,15 @@
 
     <title>Hadoop: как все устроено и как с этим жить?</title>
 
-    //=require ../header-scripts.html
+  <%= require('html-loader!../header-scripts.html') %>
 
 </head>
 
 <body id="page-top">
 
-//=require ../header.html
+<%= require('html-loader!../header.html') %>
 
-//=require ../landing-intro.html
+<%= require('html-loader!../landing-intro.html') %>
 
 <div class="container">
     <div class="row">
@@ -48,14 +48,14 @@
             <iframe src="https://www.youtube.com/embed/HsujJGwezYU" width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
             <br>
-            <a href="wp-content/uploads/2017/09/Hadoop-2017-Yaroslavl.pdf">Алексей Зиновьев "Hadoop: как все устроено и как с этим жить?"</a>
+            <a href="content/2017/Hadoop-2017-Yaroslavl.pdf">Алексей Зиновьев "Hadoop: как все устроено и как с этим жить?"</a>
         </div>
     </div>
 </div>
 
-//=require ../footer.html
+<%= require('html-loader!../footer.html') %>
 
-//=require ../footer-scripts.html
+<%= require('html-loader!../footer-scripts.html') %>
 
 </body>
 

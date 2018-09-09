@@ -10,26 +10,33 @@
 
     <title>Конференция разработчиков YappiDays'17</title>
 
-    //=require header-scripts.html
+  <%= require('html-loader!./header-scripts.html') %>
 
 </head>
 
 <body id="page-top">
 
-//=require header.html
+<%= require('html-loader!./header.html') %>
 
-//=require landing-intro.html
+<%= require('html-loader!./landing-intro.html') %>
 
-//=require yappidays2017-about-conf.html
+<%= require('html-loader!./yappidays2017-about-conf.html') %>
 
-//=require yappidays2017-speakers.html
+<%= require('html-loader!./yappidays2017-speakers.html') %>
 
-//=require footer.html
+<%= require('html-loader!./footer.html') %>
 
 <!-- Portfolio Modals -->
-//=require yappidays2017-speakers/*.html
+<%= require('html-loader!./yappidays2017-speakers/speaker-1.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-2.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-3.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-4.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-5.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-6.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-7.html') %>
+<%= require('html-loader!./yappidays2017-speakers/speaker-8.html') %>
 
-//=require footer-scripts.html
+<%= require('html-loader!./footer-scripts.html') %>
 
 </body>
 

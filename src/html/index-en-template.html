@@ -10,33 +10,38 @@
 
     <title>Developer conference YappiDays</title>
 
-    //=require header-scripts.html
+    <%= require('html-loader!./header-scripts.html') %>
 
   </head>
 
   <body id="page-top">
 
-    //=require header-en.html
+  <%= require('html-loader!./header-en.html') %>
 
-    //=require landing-en-intro.html
+  <%= require('html-loader!./landing-en-intro.html') %>
 
-    //=require landing-en-about-conf.html
+  <%= require('html-loader!./landing-en-about-conf.html') %>
 
-    //=require landing-en-cfp.html
+  <%= require('html-loader!./landing-en-cfp.html') %>
 
-    //=require landing-en-about-city.html
+  <%= require('html-loader!./landing-en-about-city.html') %>
 
-    //=require landing-en-speakers.html
+  <%= require('html-loader!./landing-en-speakers.html') %>
 
-    //=require landing-media.html
+  <%= require('html-loader!./landing-en-sponsors.html') %>
 
-    //=require landing-en-sponsors.html
+  <%= require('html-loader!./footer-en.html') %>
 
-    //=require footer-en.html
+  <%= require('html-loader!./landing-speakers/speaker-1.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-2.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-3.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-4.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-5.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-6.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-7.html') %>
+  <%= require('html-loader!./landing-speakers/speaker-8.html') %>
 
-    //=require landing-speakers/*.html
-
-    //=require footer-scripts.html
+  <%= require('html-loader!./footer-scripts.html') %>
 
     <div id="ytWidget"></div>
     <script

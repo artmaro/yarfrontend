@@ -10,23 +10,23 @@
 
     <title>Конференция разработчиков YappiDays</title>
 
-    //=require header-scripts.html
+    <%= require('html-loader!./header-scripts.html') %>
 
   </head>
 
   <body id="page-top">
 
-    //=require header.html
+  <%= require('html-loader!./header.html') %>
 
-    //=require landing-intro.html
+  <%= require('html-loader!./landing-intro.html') %>
 
-    //=require cfp-text.html
+  <%= require('html-loader!./cfp-text.html') %>
 
-    //=require landing-map.html
+  <%= require('html-loader!./landing-map.html') %>
 
-    //=require footer.html
+  <%= require('html-loader!./footer.html') %>
 
-    //=require footer-scripts.html
+  <%= require('html-loader!./footer-scripts.html') %>
 
   </body>
 

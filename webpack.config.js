@@ -2,6 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const generateHtmlFile = (template, filename) => {
   return new HtmlWebpackPlugin({
@@ -50,7 +51,7 @@ module.exports = env => {
         },
         {
           test: /\.jpe?g$|\.gif$|\.png$|\.ttf$|\.eot$|\.svg$/,
-          use: 'file-loader?name=[name].[ext]?[hash]'
+          use: 'file-loader?name=assets/[name].[ext]?[hash]'
         }
       ]
     },
@@ -60,6 +61,30 @@ module.exports = env => {
           {
             from: './src/content',
             to: './content'
+          },
+          {
+            from: './src/assets/favicon',
+            to: './assets/favicon'
+          },
+          {
+            from: './src/vendor',
+            to: './vendor'
+          },
+          {
+            from: './src/js',
+            to: './js'
+          },
+          {
+            from: './site.webmanifest',
+            to: './'
+          },
+          {
+            from: './src/mail',
+            to: './mail'
+          },
+          {
+            from: './browserconfig.xml',
+            to: './browserconfig.xml'
           }
         ]
       ),
@@ -67,7 +92,15 @@ module.exports = env => {
         {
           filename: 'css/style.css'
         }
-      )
+      ),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.css$/,
+        cssProcessor: require('cssnano'),
+        cssProcessorPluginOptions: {
+          preset: ['default', { discardComments: { removeAll: true } }],
+        },
+        canPrint: true
+      })
     ].concat([
       generateHtmlFile('src/html/index-template.html', 'index.html'),
       generateHtmlFile('src/html/index-en-template.html', 'index-en.html'),
