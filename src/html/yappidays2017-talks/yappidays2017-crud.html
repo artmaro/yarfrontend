@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Дизайн методов обновления ресурса в CRUD REST-сервисах</title>
+
+  <%= require('html-loader!../header-scripts.html') %>
+
+</head>
+
+<body id="page-top">
+
+<%= require('html-loader!../header.html') %>
+
+<%= require('html-loader!../landing-intro.html') %>
+
+<div class="container">
+    <div class="row">
+        <div>
+            <h2 class="header-with-margin">Дизайн методов обновления ресурса в CRUD REST-сервисах</h2>
+            Во многих проектах ставится задача организовать доступ к ресурсу через REST API в т.ч. реализовать методы для обновления ресурса. К сожалению из-за отсутствия стандарта обновление ресурса зачастую до сих пор ассоциируется только с HTTP методом PUT.
+
+            В своем докладе я расскажу:
+            <ol>
+                <li>Почему HTTP PUT в общем случае - не лучший метод для обновления ресурса. В каких случаях его действительно нужно применять.</li>
+                <li>Об HTTP методе PATCH.</li>
+                <li>Об HTTP методе POST для обновления ресурса.</li>
+            <li>О проблеме параллельного обновления ресурса.</li>
+            </ol>
+            <b>План:</b>
+            <ol>
+                <li>HTTP PUT.</li>
+                <ol>
+                <li>             HTPP PUT - замена ресурса по указанному адресу.</li>
+                <li>             Ограничения HTTP PUT // Расширения состава атрибутов влечет правку клиентов, идемпотентность, кэширование. Практические грабли, если проигнорировать ограничения: Nginx, Chrome.</li>
+                <li>             Когда действительно стоит использовать HTTP PUT. // Пример с книжной полкой, пример с избранным.</li>
+                </ol>
+                <li>             HTTP PATCH.</li>
+                <ol>
+                <li>             HTTP PATCH - частичное обновление ресурса.</li>
+                <li>             JSON Patch.</li>
+                <li>             Пример JSON Patch.</li>
+                <li>             JSON Merge Patch.</li>
+                <li>             Пример JSON Merge Patch.</li>
+                <li>             HTTP PATCH - универсальный метод для обновления ресурса.</li>
+                </ol>
+                <li>             HTTP POST для обновления ресурса.</li>
+                <ol>
+                <li>             Пример с асинхронным обновлением. // Пример с обновлением физически занимающем минуты.</li>
+                <li>             Пример обновлением-бизнес-операцией. // Пример с неявным изменением состояния документа.</li>
+                </ol>
+                <li>             Проблема параллельного обновления ресурса.</li>
+                <ol>
+                <li>             Описание проблемы. // 2 клиента обновили один и тот-же ресурс и оба подумали, что их данные попали на сервер. Пример - задача в трекере с атрибутом "assignedTo".</li>
+                <li>             Решение проблемы с помощью ETag и If-Match.</li>
+                </ol>
+            </ol>
+            <br>
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/Ack47C80RBg" frameborder="0" gesture="media" allowfullscreen></iframe>
+            <br>
+            <a href="wp-content/uploads/2017/09/Дизайн_методов_обновления_ресурса.pptx">Презентация</a>
+        </div>
+    </div>
+</div>
+
+<%= require('html-loader!../footer.html') %>
+
+<%= require('html-loader!../footer-scripts.html') %>
+
+</body>
+
+</html>
