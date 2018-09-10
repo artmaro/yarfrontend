@@ -88,7 +88,7 @@ module.exports = env => {
           },
           {
             from: './CNAME',
-            to: './CNAME'
+            to: './'
           }
         ]
       ),
