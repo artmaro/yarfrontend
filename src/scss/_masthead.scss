@@ -48,3 +48,12 @@ header.masthead {
     }
   }
 }
+
+header.masthead-short {
+  background-position: top !important;
+  .intro-text {
+    padding-top: 150px !important;
+    padding-bottom: 100px !important;
+  }
+
+}
