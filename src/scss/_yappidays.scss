@@ -19,6 +19,13 @@
   height: 350px;
   object-fit: cover;
 }
+
+.img-round-small {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 .cool-text {
 	margin-top: 2em;
     font-size: 1.2em;

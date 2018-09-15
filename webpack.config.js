@@ -111,6 +111,7 @@ module.exports = env => {
       generateHtmlFile('src/html/privacy-template.html', 'privacy.html'),
       generateHtmlFile('src/html/cfp-template.html', 'cfp.html'),
       generateHtmlFile('src/html/training-ml-template.html', 'training-ml.html'),
+      generateHtmlFile('src/html/talks-template.html', 'talks.html'),
       generateHtmlFile('src/html/yappidays2017-template.html', 'yappidays2017.html'),
       generateHtmlFile('src/html/yappidays2017-talks/yappidays2017-hadoop.html', 'yappidays2017-hadoop.html'),
       generateHtmlFile('src/html/yappidays2017-talks/yappidays2017-ci.html', 'yappidays2017-ci.html'),
