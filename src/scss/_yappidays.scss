@@ -60,3 +60,39 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+.talk-container {
+  display: flex;
+
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px lightgray;
+
+  .two-avatars img {
+    margin-bottom: 20px;
+  }
+
+  .talk-area {
+    margin-left: 40px;
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    .talk-tags {
+      margin-top: 20px;
+    }
+
+    .talk-tags div {
+      float: left;
+      color: white;
+      background-color: #adb5bd;
+      padding: 2px 7px;
+      margin-right: 5px;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+
