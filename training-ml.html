@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Тренинг Алексея Зиновьева - Машинное обучение на BigData-проектах</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Custom fonts for this template -->
+<link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="./css/style.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  </head>
+
+  <body id="page-top">
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/">
+      <img class="yappi-logo" src="/assets/logo.png?03e17e1679f1fc96cdbe966d2479cd09">
+    </a>
+    <button
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/">Конференция YappiDays'18</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#whatabout">О чем тренинг?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#author">Об авторе</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#program">Программа</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#register">Регистрация</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- Header -->
+<header class="masthead masthead-short">
+  <div class="container">
+    <div class="intro-text intro-text-short">
+      <div class="intro-heading text-uppercase"> Машинное обучение на BigData-проектах</div>
+      <div class="intro-lead-in">Тренинг Алексея Зиновьева<br>2 ноября 2018 </div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#register">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+
+  <p></p>
+<div style="padding: 2em 100px;">
+  <h3 class="text-uppercase">Для кого этот тренинг</h3>
+  <br>
+  <p>Java и Scala - разработчики, которые начинают работу на BigData - проектах или планируют начать работать в
+    ближайшем будущем, в запасе у которых несколько добротно написанных бэкендов.</p>
+
+  <p>Также тренинг может быть полезен для Python / R - разработчиков, которые планируют работать в тесной связке с Big
+    Data - командами в качестве Data Scientist.</p>
+
+  <p>Даже если вы C#/C++ разработчик - приходите, все скелеты проектов будут выданы, проблем со сборкой не будет, а
+    дальше будем работать с API фреймворков.</p>
+
+  <p>Необходимые знания:</p>
+  <ul>
+    <li>базовые знания Linux,</li>
+    <li>знания Java и SQL,</li>
+    <li>плюсом будет опыт работы с Hadoop/Spark/Kafka</li>
+  </ul>
+
+  <p id="whatabout"/>
+  <br>
+  <h3 class="text-uppercase" >О чем тренинг?</h3>
+  <br>
+  <p>Решение задач при помощи алгоритмов машинного обучения (machine learning) или глубокого обучения (deep learning)
+    перестает быть занятием для PhD в Computer Science и становится типичным базовым требованием в вакансии Data
+    Engineer.
+  </p>
+
+  <p>Проверьте количество вакансий на hh, если вам интересна востребованность <br>
+    <a href="https://hh.ru/search/vacancy?text=deep+learning" target="_blank">https://hh.ru/search/vacancy?text=deep+learning</a>
+    <br>
+    <a href="https://hh.ru/search/vacancy?text=machine+learning" target="_blank">https://hh.ru/search/vacancy?text=machine+learning</a>
+    <br>
+  </p>
+
+  <p>Обычно на таком проекте имеется бэкенд написанный на Java или Scala при помощи таких фреймворков, как
+  </p>
+
+  <ul>
+    <li>Spark</li>
+    <li>Kafka</li>
+    <li>Hadoop</li>
+    <li>Ignite</li>
+    <li>Flink</li>
+  </ul>
+
+  <p>Многие из этих фреймворков имеют встроенные ML/DL решения разного качества и удобства использования, и многие
+    команды мечутся между использованием Python-библиотек и их интеграцией с остальной экосистемой и тотальным
+    использование Spark MLlib для решения всех задач.
+  </p>
+
+  <p>Я на протяжении нескольких последних лет, создаю цепочки машинного обучения (ML Pipelines) полного цикла от
+    потребления данных до дообучения моделей на порциях новых данных, а также являюсь активным контрибутором ML
+    фреймворков в вышеперечисленных инструментах.</p>
+
+  <p>Данный тренинг подготовлен на основе моего опыта и типичных граблей, по которым раз за разом ходят
+    Java-разработчики, далекие от мира машинного обучения и ежедневной работы с математической статистикой.</p>
+
+  <p>В ходе тренинга будет много взаимодействия с участниками, live coding-а, мы решим несколько практических задач
+    трансформации и анализа данных, поработаем с самой свежей версией Spark/Ignite/Flink, обсудим вопросы повышения
+    производительности полученных решений.</p>
+
+  <p id="author"/>
+  <br>
+  <h3 class="text-uppercase">Автор тренинга</h3>
+  <br>
+  <br>
+  <img
+    class="speaker-photo img-fluid d-block mx-auto"
+    src="/assets/zinovev.jpg?84ae77f403dd3dce45baaba3a26261b0"
+    alt="Алексей Зиновьев"
+  >
+  <br>
+  <br>
+  <p>Алексей Зиновьев тренер по Java/BigData в компании EPAM, с Hadoop/Spark и прочей бигдатой дружит с 2012 года, форкается и пуллреквестит с 2014, рассказывает с 2015. Особенно любит текстовые данные и большие графы. Несет бигдату в массы в группе <a href="https://vk.com/big_data_russia" target="_blank">https://vk.com/big_data_russia</a></p>
+  <p>Видео выступлений доступны на странице
+    <a target="_blank" href="https://www.lektorium.tv/speaker/27398">лекториума.</a>
+  </p>
+
+  <p id="program"/>
+  <br>
+  <h3 class="text-uppercase">Подробное описание тем</h3>
+  <br>
+  <p>Продолжительность: 8 часов (4 часа лекций + 4 часа практики)</p>
+
+  <ol>
+    <li class="li-padding">Машинное обучение для джавистов
+      <br>
+      <ul class="li-padding">
+        <li>Типичные задачи машобуча</li>
+        <li>Обучение с учителем и без</li>
+        <li>Задача кластеризации объектов</li>
+        <li>Задача классификации объектов</li>
+        <li>Этапы работы с данными</li>
+        <li>Этапы работы с моделью</li>
+        <li>Что такое бустинг?</li>
+        <li>Насколько “глубоко” глубокое обучение?</li>
+        <li>Обучение в режиме реального времени</li>
+        <li>В какие задачи лучше не пихать машинное обучение</li>
+      </ul>
+    </li>
+    <div class="li-padding font-italic">Практическое задание 1. Работа с Weka</div>
+    <li class="li-padding">Локальное машинное обучение на Java
+      <br>
+      <ul class="li-padding">
+        <li>Метод ближайших соседей</li>
+        <li>Популярные библиотеки машинного обучения на Java</li>
+        <li>Возможна ли интеграция с Python - экосистемой?</li>
+        <li>Как хранить данные для обучения?</li>
+      </ul>
+    </li>
+    <div class="li-padding font-italic">Практическое задание 2. Кластеризация с Apache Commons</div>
+
+    <li class="li-padding">Основы машинного обучения в кластере Spark
+      <br>
+      <ul class="li-padding">
+        <li>Краткое введение в Spark</li>
+        <li>Основные инструменты разработки</li>
+        <li>DataFrame API</li>
+        <li>Основные типы данных: Vector, Labeled Point & Rating</li>
+        <li>Распределенные матрицы</li>
+        <li>Классификация и кластеризация со Spark ML</li>
+        <li>Возможности Spark ML</li>
+        <li>Немощь и недостатки Spark ML</li>
+      </ul>
+    </li>
+    <div class="li-padding font-italic">Практическое задание 3. Решающие деревья со Spark ML
+    </div>
+
+    <li class="li-padding">Пайплайн машинного обучения со Spark ML
+      <br>
+      <ul class="li-padding">
+        <li>Загрузка данных</li>
+        <li>Очистка данных</li>
+        <li>Подготовка фич</li>
+        <li>Выбор фич</li>
+        <li>Тренировка машинного обучения</li>
+        <li>Оценка модели</li>
+        <li>Выбор наилучшей модели в ходе кросс-валидации</li>
+        <li>Экспорт модели</li>
+        <li>Ансамбль моделей</li>
+        <li>Слияние моделей</li>
+      </ul>
+    </li>
+
+    <div class="li-padding font-italic">Практическое задание 4. Создание пайплайна для задачи-сюрприза
+    </div>
+
+    <li class="li-padding">
+      Пайплайн машинного обучения с Ignite ML
+      <br>
+      <ul class="li-padding">
+        <li>Как тренироваться, если данные лежат в Ignite - кэше</li>
+        <li>Особенности “ленивой” тренировки</li>
+        <li>Partitioned Datasets в Ignite ML</li>
+        <li>Паритет по алгоритмам со Spark в релизе 2.7</li>
+        <li>Ансамбли моделей</li>
+        <li>Бустинг</li>
+      </ul>
+    </li>
+
+    <li class="li-padding">
+      Онлайн обучение
+      <br>
+      <ul class="li-padding">
+        <li>Возможности Spark ML</li>
+        <li>Грабим данные из Kafka</li>
+        <li>Интеграция с Flink и Storm</li>
+        <li>Flink ML и его возможности</li>
+        <li>Дообучение моделей в Apache Ignite</li>
+
+      </ul>
+    </li>
+
+    <li class="li-padding">
+      Глубокое обучение
+      <br>
+      <ul class="li-padding">
+        <li>Перцептрон и нейросети</li>
+        <li>Автокодировщики</li>
+        <li>RNN, CNN, LSTM</li>
+        <li>DL4J: библиотека с нейросетями</li>
+        <li>Что такое TensorFlow и как это готовить?</li>
+        <li>Интеграция Spark c TensorFlow</li>
+        <li>Интеграция Ignite c TensorFlow</li>
+
+      </ul>
+    </li>
+
+    <div class="li-padding font-italic">Практическое задание 5. Решаем задачу распознавания с DL4j
+
+    </div>
+
+  </ol>
+
+  <p id="register"/>
+  <br>
+  <h3 class="text-uppercase">Регистрация
+  </h3>
+  <br>
+
+  <a href="https://yappidays.timepad.ru/event/810945/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" async="async" defer="defer" charset="UTF-8" src="https://timepad.ru/js/tpwf/loader/min/loader.js" data-timepad-customized="29906" data-twf2s-event--id="810945" data-timepad-widget-v2="event_register"></script>
+
+  <br>
+  <h3 class="text-uppercase">Время и место
+  </h3>
+  <br>
+
+  <p>2 ноября 2018, с 11.00 до 19.00 по адресу: г. Ярославль, Октябрьский переулок, 3, офис 207</p>
+  <p>При возникновении любых вопросов пишите <a href="https://vk.com/evgeniy.kokuykin" target="_blank">Евгению Кокуйкину</a>.</p>
+
+  <br>
+  <h3 class="text-uppercase">Что нужно иметь на тренинге?
+  </h3>
+  <br>
+  <ul>
+    <li>ноутбук с 8 GB RAM</li>
+    <li><a href="https://www.jetbrains.com/idea/download" target="_blank">IDEA Community edition</a></li>
+    <li>Scala + Sbt plugins для IDEA или умение работать с Java + Maven</li>
+    <li>собираемый HelloWorld проект [будет предоставлено тренером за неделю до тренинга]</li>
+    <li>скачанный заранее датасет [будет предоставлено тренером за неделю до тренинга]</li>
+
+  </ul>
+
+</div>
+</div>
+<p></p>
+
+
+  <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4c460d0e9f7a1a7476450a9892d3a347716da393392ad7e33c59bced77d69a95&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
+
+
+  <!-- Footer -->
+<footer> <!--VK and telegram links, link to privacy policy TODO-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">YappiDays 2018</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://vk.com/yappidays">
+              <i class="fa fa-vk"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://t.me/yappidaysconf">
+              <i class="fa fa-telegram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="/privacy.html">Политика обработки персональных данных</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="./js/jqBootstrapValidation.js"></script>
+<script src="./js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="./js/agency.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,4 +1,4 @@
-(function($) {
+(function($, window) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -47,4 +47,17 @@
     $(".navbar").removeClass("d-none");
   })
 
-})(jQuery); // End of use strict
+  $('.training-link').click(function(e) {
+    $('.training-head').toggleClass('showSubmenu');
+    e.stopPropagation();
+  });
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.training-link')) {
+      var myDropdown = $('.training-head');
+      if (myDropdown.hasClass('showSubmenu')) {
+        myDropdown.removeClass('showSubmenu');
+      }
+    }
+  }
+})(jQuery, window); // End of use strict
