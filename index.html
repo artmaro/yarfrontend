@@ -58,10 +58,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Спикеры</a>
+          <a class="nav-link js-scroll-trigger" href="/#portfolio">Спикеры</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">Регистрация</a>
+          <a class="nav-link js-scroll-trigger" href="/#schedule">Программа</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#register">Купить билет</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="/talks.html">Доклады</a>
@@ -98,7 +101,7 @@
     <div class="intro-text">
       <div class="intro-lead-in">Конференция разработчиков YappiDays</div>
       <div class="intro-heading text-uppercase">3 ноября 2018 <br> Ярославль КЗЦ "Миллениум"</div>
-      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/cfp.html">Подать доклад</a>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/#register">Купить билет</a>
     </div>
   </div>
 </header>
@@ -156,7 +159,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Алексей Рагозин</h4>
-          <p class="text-muted">Deustche Bank</p>
+          <p class="text-muted">Deutsche Bank</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -226,7 +229,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Иван Крутов</h4>
-          <p class="text-muted">Developer, Aerokube</p>
+          <p class="text-muted">Aerokube</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -314,12 +317,15 @@
         </div>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/talks.html">Смотреть все доклады</a>
+    </div>
   </div>
 </section>
 
 
   <!-- Services -->
-<section id="services">
+<section id="schedule">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -327,43 +333,174 @@
         <h3 class="section-subheading text-muted"> </h3>
       </div>
     </div>
+    <div class="row schedule-warn">В программе возможны изменения.</div>
     <div class="row">
 
       <div class="schedule">
 
         <div class="schedule-row schedule-header">
           <div class="schedule-time">Время</div>
-          <div class="schedule-col">Малый зал</div>
-          <div class="schedule-col">Конференц-зал</div>
-          <div class="schedule-col">Кинозал</div>
+          <div class="schedule-col text-center">Зал 1</div>
+          <div class="schedule-col text-center">Зал 2</div>
+          <div class="schedule-col text-center">Зал 3</div>
         </div>
         <div class="schedule-row schedule-talk">
           <div class="schedule-time">9:00</div>
-          <div class="schedule-col">Регистрация участников</div>
+          <div class="schedule-col schedule-col-single">Регистрация участников</div>
         </div>
         <div class="schedule-row schedule-break">
           <div class="schedule-time">10:00</div>
-          <div class="schedule-col">Открытие конференции</div>
+          <div class="schedule-col schedule-col-single">Открытие конференции</div>
         </div>
         <div class="schedule-row schedule-talk">
           <div class="schedule-time">10:30</div>
           <div class="schedule-col">
-            <div class="schedule-title">Как устроен полнотекстовый поиск</div>
-            <div class="schedule-speaker">Алексей Бичук</div>
+            <div class="schedule-title">Тема доклада уточняется</div>
+            <div class="schedule-speaker">Алексей Зиновьев, EPAM</div>
           </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Эволюция архитектуры nopCommerce</div>
+            <div class="schedule-speaker">Андрей Мазульницын, nopCommerce</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Тестирование: как забыть о проблемах с Selenium</div>
+            <div class="schedule-speaker">Иван Крутов, Aerokube</div>
+          </div>
+        </div>
+        <div class="schedule-row schedule-break">
+          <div class="schedule-time">11:30</div>
+          <div class="schedule-col schedule-col-single">Перерыв</div>
+        </div>
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">12:00</div>
+          <div class="schedule-col">
+            <div class="schedule-title">Прагматическое профилирование Java приложений</div>
+            <div class="schedule-speaker">Алексей Рагозин, Deutsche Bank</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Проектирование, разработка и эксплуатация высоконагруженной системы онлайн репликации >500 ТБ и 1 млрд. файлов клиентов между континентами: Amazon S3 (США) - облако Mail.ru (Россия)</div>
+            <div class="schedule-speaker">Александр Сербул, 1С-Битрикс</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Массовая оптимизация запросов PostgreSQL</div>
+            <div class="schedule-speaker">Кирилл Боровиков, Тензор</div>
+          </div>
+        </div>
+        <div class="schedule-row schedule-break">
+          <div class="schedule-time">13:00</div>
+          <div class="schedule-col schedule-col-single">Обед</div>
+        </div>
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">14:00</div>
+          <div class="schedule-col">
+            <div class="schedule-title">Kotlin DSL за час</div>
+            <div class="schedule-speaker">Антон Архипов, JetBrains</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Самозванцы, выгорание, границы</div>
+            <div class="schedule-speaker">Анастасия Калашникова</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Опыт разработки статического анализатора кода</div>
+            <div class="schedule-speaker">Андрей Карпов, PVS-Studio</div>
+          </div>
+        </div>
+        <div class="schedule-row schedule-break">
+          <div class="schedule-time">15:00</div>
+          <div class="schedule-col schedule-col-single">Перерыв</div>
+        </div>
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">15:30</div>
           <div class="schedule-col">
             <div class="schedule-title">Как устроен полнотекстовый поиск</div>
             <div class="schedule-speaker">Алексей Бичук</div>
           </div>
           <div class="schedule-col">
-            <div class="schedule-title">Как устроен полнотекстовый поиск</div>
-            <div class="schedule-speaker">Алексей Бичук</div>
+            <div class="schedule-unconf">Доклад уточняется</div>
           </div>
+          <div class="schedule-col">
+            <div class="schedule-unconf">Доклад уточняется</div>
+          </div>
+        </div>
+        <div class="schedule-row schedule-break">
+          <div class="schedule-time">16:30</div>
+          <div class="schedule-col schedule-col-single">Перерыв</div>
+        </div>
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">17:00</div>
+          <div class="schedule-col">
+            <div class="schedule-title">Эффективная работа с IntelliJ IDEA</div>
+            <div class="schedule-speaker">Антон Архипов, JetBrains</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-title">Мастер-класс «SonarQube: от установки до анализа production-кода»</div>
+            <div class="schedule-speaker">Филипп Хандельянц и Святослав Размыслов, PVS-Studio</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-unconf">Доклад уточняется</div>
+          </div>
+        </div>
+        <div class="schedule-row schedule-break">
+          <div class="schedule-time">18:00</div>
+          <div class="schedule-col schedule-col-single">Перерыв</div>
+        </div>
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">18:30</div>
+          <div class="schedule-col schedule-col-single">
+            <div class="schedule-unconf ">Доклад уточняется</div>
+          </div>
+        </div>
+        <div class="schedule-row schedule-break">
+          <div class="schedule-time">19:30</div>
+          <div class="schedule-col schedule-col-single">Закрытие конференции</div>
         </div>
 
       </div>
 
     </div>
+  </div>
+</section>
+
+
+  <!-- Services -->
+<section id="register">
+  <script>
+    function selectStudent() {
+      $('#standard-register').hide();
+      $('#student-register').show();
+      $('#student-btn').addClass('btn-primary');
+      $('#student-btn').removeClass('btn-grey');
+      $('#standard-btn').removeClass('btn-primary');
+      $('#standard-btn').addClass('btn-grey');
+    }
+
+    function selectStandard() {
+      $('#standard-register').show();
+      $('#student-register').hide();
+      $('#student-btn').removeClass('btn-primary');
+      $('#student-btn').addClass('btn-grey');
+      $('#standard-btn').addClass('btn-primary');
+      $('#standard-btn').removeClass('btn-grey');
+    }
+  </script>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Регистрация</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <a id="standard-btn" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="selectStandard()">Стандартный билет</a>
+      <a id="student-btn" class="btn btn-grey btn-xl text-uppercase js-scroll-trigger" style="margin-left: 40px" onclick="selectStudent()">Студенческий билет</a>
+    </div>
+    <div class="register-ticket" id="standard-register">
+      <a href="https://yappidays.timepad.ru/event/811496/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" async="async" defer="defer" charset="UTF-8" src="https://timepad.ru/js/tpwf/loader/min/loader.js" data-timepad-customized="29906" data-twf2s-event--id="811496" data-timepad-widget-v2="event_register"></script>
+    </div>
+    <div class="register-ticket" id="student-register" style="display: none;">
+      <a href="https://yappidays.timepad.ru/event/811509/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" async="async" defer="defer" charset="UTF-8" src="https://timepad.ru/js/tpwf/loader/min/loader.js" data-timepad-customized="29906" data-twf2s-event--id="811509" data-timepad-widget-v2="event_register"></script>
+    </div>
+
   </div>
 </section>
 
