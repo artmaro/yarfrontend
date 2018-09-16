@@ -143,5 +143,10 @@
   }
 }
 
-
+.training-text-container {
+  padding: 2em 100px;
+  @media only screen and (max-width: 768px) {
+    padding: 2em 10px;
+  }
+}
 
