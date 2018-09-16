@@ -1,0 +1,42 @@
+.schedule {
+  &-row {
+    display: flex;
+
+  }
+
+  &-header {
+    background-color: #fed136;
+
+    font-weight: 700;
+  }
+
+  &-break {
+    background-color: #fed13675;
+  }
+
+  &-time {
+    flex: 0 1 100px;
+    text-align: center;
+    border-right: solid 2px #fed136;
+    padding: 10px 0px;
+  }
+
+  &-col {
+    flex: 1;
+    text-align: left;
+    align-self: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  &-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &-warn {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
