@@ -60,6 +60,7 @@
 
 .talk-container {
   display: flex;
+  position: relative;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -74,25 +75,27 @@
 
   .talk-area {
     margin-left: 40px;
+    margin-bottom: 60px;
 
     h5 {
       margin-bottom: 20px;
     }
 
     .labels {
-      margin-top: 20px;
-    }
+      position: absolute;
+      bottom: 30px;
 
-    .labels > div {
-      display: inline-block;
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1;
-      background-color: #e8e8e8;
-      padding: .5833em .833em;
-      color: rgba(0,0,0,.6);
-      border-radius: .28571429rem;
-      margin-bottom: 4px;
+      div {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1;
+        background-color: #e8e8e8;
+        padding: .5833em .833em;
+        color: rgba(0,0,0,.6);
+        border-radius: .28571429rem;
+        margin-bottom: 4px;
+      }
     }
   }
 }
