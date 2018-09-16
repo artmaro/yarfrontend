@@ -53,14 +53,21 @@
 }
 
 .talk-container {
-  display: flex;
-  position: relative;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    max-width: 95%;
+    text-align: center;
+  }
 
+  @media only screen and (min-width: 769px) {
+    display: flex;
+    max-width: 80%;
+  }
+
+  position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: solid 1px lightgray;
-
-  max-width: 80%;
   margin: 0 auto;
 
   .avatar {
@@ -69,14 +76,48 @@
     height: 200px;
     object-fit: cover;
     flex-shrink: 0;
-  }
-
-  .two-avatars > .avatar {
     margin-bottom: 20px;
   }
 
+  .two-avatars {
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 769px) {
+      .avatar {
+        width: 40vw;
+        height: 40vw;
+        margin: 0 auto 20px;
+      }
+
+      .avatar:nth-child(1) {
+        border-radius: 100px 0 0 100px;
+        margin-right: 0;
+      }
+
+      .avatar:nth-child(2) {
+        border-radius: 0 100px 100px 0;
+        margin-left: 0;
+      }
+    }
+  }
+
   .talk-area {
-    margin-left: 40px;
+    @media only screen and (max-width: 768px) {
+      .about {
+        text-align: left;
+      }
+
+      .labels {
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (min-width: 769px) {
+      margin-left: 40px;
+    }
 
     h5 {
       margin-bottom: 20px;
@@ -85,6 +126,7 @@
     .labels {
       position: absolute;
       bottom: 30px;
+      width: 100%;
 
       div {
         display: inline-block;
