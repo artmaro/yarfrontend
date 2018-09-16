@@ -20,12 +20,6 @@
   object-fit: cover;
 }
 
-.img-round-small {
-  border-radius: 100%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
 .cool-text {
   margin-top: 2em;
   font-size: 1.2em;
@@ -69,13 +63,20 @@
   max-width: 80%;
   margin: 0 auto;
 
-  .two-avatars img {
+  .avatar {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .two-avatars > .avatar {
     margin-bottom: 20px;
   }
 
   .talk-area {
     margin-left: 40px;
-    margin-bottom: 60px;
 
     h5 {
       margin-bottom: 20px;
