@@ -13,11 +13,24 @@
   margin-top: 50px;
 }
 
+.sponsor-mobile {
+  @media only screen and (max-width: 768px){
+    display: block !important;
+
+    .col {
+      margin-bottom: 20px;
+    }
+  }
+}
 
 .img-fluid {
   width: 350px;
   height: 350px;
   object-fit: cover;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .cool-text {
@@ -50,97 +63,6 @@
 .li-padding {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.talk-container {
-  @media only screen and (max-width: 768px) {
-    display: block;
-    max-width: 95%;
-    text-align: center;
-  }
-
-  @media only screen and (min-width: 769px) {
-    display: flex;
-    max-width: 80%;
-  }
-
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: solid 1px lightgray;
-  margin: 0 auto;
-
-  .avatar {
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
-    margin-bottom: 20px;
-  }
-
-  .two-avatars {
-    @media only screen and (max-width: 768px) {
-      display: flex;
-      text-align: center;
-    }
-
-    @media only screen and (max-width: 769px) {
-      .avatar {
-        width: 40vw;
-        height: 40vw;
-        margin: 0 auto 20px;
-      }
-
-      .avatar:nth-child(1) {
-        border-radius: 100px 0 0 100px;
-        margin-right: 0;
-      }
-
-      .avatar:nth-child(2) {
-        border-radius: 0 100px 100px 0;
-        margin-left: 0;
-      }
-    }
-  }
-
-  .talk-area {
-    @media only screen and (max-width: 768px) {
-      .about {
-        text-align: left;
-      }
-
-      .labels {
-        margin: 0 auto;
-      }
-    }
-
-    @media only screen and (min-width: 769px) {
-      margin-left: 40px;
-    }
-
-    h5 {
-      margin-bottom: 20px;
-    }
-
-    .labels {
-      position: absolute;
-      bottom: 30px;
-      width: 100%;
-
-      div {
-        display: inline-block;
-        font-size: 1rem;
-        font-weight: 700;
-        line-height: 1;
-        background-color: #e8e8e8;
-        padding: .5833em .833em;
-        color: rgba(0,0,0,.6);
-        border-radius: .28571429rem;
-        margin-bottom: 4px;
-      }
-    }
-  }
 }
 
 .training-text-container {
