@@ -27,33 +27,30 @@
   object-fit: cover;
 }
 .cool-text {
-	margin-top: 2em;
-    font-size: 1.2em;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
+  margin-top: 2em;
+  font-size: 1.2em;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .cool-text a {
-	font-weight: bold;
+  font-weight: bold;
 }
 .cool-text tr {
-    line-height: 3.5rem;
-    border-top: 1px solid #eee;
-    border-top-width: 1px;
-    width: 80%;
+  line-height: 3.5rem;
+  border-top: 1px solid #eee;
+  border-top-width: 1px;
+  width: 80%;
 }
 .cool-text tr:after {
-    content: "";
-    /* left: 0; */
-    bottom: 10px;
-    height: 1px;
-    width: 40px;
-    /* border-bottom: 1px solid red; */
-    display: inline-block;
-    /* margin-right: 34px; */
-    background: white;
-    margin-top: -1px;
+  content: "";
+  bottom: 10px;
+  height: 1px;
+  width: 40px;
+  display: inline-block;
+  background: white;
+  margin-top: -1px;
 }
 .cool-text tbody tr:first-child {
-	border-top: none;
+  border-top: none;
 }
 
 .li-padding {
@@ -65,8 +62,11 @@
   display: flex;
 
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   border-bottom: solid 1px lightgray;
+
+  max-width: 80%;
+  margin: 0 auto;
 
   .two-avatars img {
     margin-bottom: 20px;
@@ -79,18 +79,20 @@
       margin-bottom: 20px;
     }
 
-    .talk-tags {
+    .labels {
       margin-top: 20px;
     }
 
-    .talk-tags div {
-      float: left;
-      color: white;
-      background-color: #adb5bd;
-      padding: 2px 7px;
-      margin-right: 5px;
-      margin-top: 2px;
-      border-radius: 9px;
+    .labels > div {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1;
+      background-color: #e8e8e8;
+      padding: .5833em .833em;
+      color: rgba(0,0,0,.6);
+      border-radius: .28571429rem;
+      margin-bottom: 4px;
     }
   }
 }

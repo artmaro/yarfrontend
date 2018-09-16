@@ -79,15 +79,15 @@ module.exports = env => {
             to: './'
           },
           {
-            from: './src/mail',
-            to: './mail'
-          },
-          {
             from: './browserconfig.xml',
             to: './browserconfig.xml'
           },
           {
             from: './CNAME',
+            to: './'
+          },
+          {
+            from: './.gitignore',
             to: './'
           }
         ]
