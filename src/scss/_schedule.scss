@@ -31,6 +31,11 @@
     }
 
     display: flex;
+
+    a {
+      color: $gray-900;
+      text-decoration: underline;
+    }
   }
 
   &-legend {
