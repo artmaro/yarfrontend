@@ -108,6 +108,14 @@
 <p>
     Для участия в этом тренинге рекомендуется иметь некоторый опыт работы с Selenium, командной строкой Linux и Docker. Мы также ожидаем, что Docker будет установлен на вашем           компьютере и у вас будет с собой несколько Selenium тестов для запуска.</p>
 
+  <h4>Вы научитесь</h4>
+  <ul>
+    <li>Устанавливать и запускать Selenoid</li>
+    <li>Работать с базовыми функциями Selenoid</li>
+    <li>Создавать и сопровождать Selenoid кластер</li>
+    <li>Настраивать Ggr</li>
+    <li>Использовать продвинутые функции Selenoid для больших кластеров</li>
+  </ul>
 
   <p id="whatabout"/>
   <br>
@@ -141,17 +149,127 @@
 
   <p id="program"/>
   <br>
-  <h3 class="text-uppercase">Вы научитесь</h3>
+  <h3 class="text-uppercase">Подробное описание тем</h3>
   <br>
 
+  <h4>Часть I. Локальная работа с Selenoid</h4>
+  <ol>
+    <li class="li-padding">Selenium: 20 минут теории
+      <br>
+      <ul class="li-padding">
+        <li>Краткая история Selenium</li>
+        <li>Архитектура WebDriver</li>
+        <li>Как работает Selenoid</li>
+      </ul>
+    </li>
+    <li class="li-padding">Установка Selenoid для разработки автотестов
+      <br>
+      <ul class="li-padding">
+        <li>Что нужно для запуска Selenoid</li>
+        <li>Ручная установка: создание конфигурационного файла, скачивание образов с браузерами, запуск Selenoid</li>
+        <li>Автоматическая установка при помощи утилиты CM</li>
+        <li>Установка и возможности Selenoid UI</li>
+      </ul>
+    </li>
+    <li class="li-padding">Основные возможности Selenoid:
+      <br>
+      <ul class="li-padding">
+        <li>Выставление произвольного разрешения экрана</li>
+        <li>Экран теста в реальном времени</li>
+        <li>Запись и скачивание видео выполнения теста</li>
+        <li>Пользовательское имя теста</li>
+      </ul>
+    </li>
+    <li class="li-padding">Обновление браузеров
+      <br>
+      <ul class="li-padding">
+        <li>Автоматически</li>
+        <li>Вручную</li>
+      </ul>
+    </li>
 
-  <ul>
-    <li>Устанавливать и запускать Selenoid</li>
-    <li>Работать с базовыми функциями Selenoid</li>
-    <li>Создавать и сопровождать Selenoid кластер</li>
-    <li>Настраивать Ggr</li>
-    <li>Использовать продвинутые функции Selenoid для больших кластеров</li>
-  </ul>
+  </ol>
+  <br>
+  <h4>Часть II. Настойка кластера Selenium</h4>
+  <ol>
+    <li class="li-padding">Теория кластеров Selenium
+      <br>
+      <ul class="li-padding">
+        <li>Почему Selenium Grid не подходит</li>
+        <li>Балансировка на клиенте</li>
+        <li>Балансировка на сервере</li>
+        <li>Как передавать состояние сессии: магия session ID</li>
+        <li>Ggr и как он работает</li>
+      </ul>
+    </li>
+    <li class="li-padding">Настраиваем Ggr
+      <br>
+      <ul class="li-padding">
+        <li>Создание файла с пользователями</li>
+        <li>Создание файла с квотами</li>
+        <li>Запуск Ggr</li>
+        <li>Выполнение тестов через Ggr</li>
+      </ul>
+    </li>
+    <li class="li-padding">Управление работающим кластером
+      <br>
+      <ul class="li-padding">
+        <li>Изменяем список браузеров на горячую</li>
+        <li>Добавляем пользователей на горячую</li>
+        <li>Как работать с несколькими квотами</li>
+        <li>Проксирование во внешние Selenium сервисы</li>
+        <li>Проксирование видео, логов, скачанных файлов</li>
+        <li>Добавление новых истансов Ggr</li>
+      </ul>
+    </li>
+    <li class="li-padding">Ggr UI
+      <br>
+      <ul class="li-padding">
+        <li>Как оно работает</li>
+        <li>Как запустить и использовать вместе с Selenoid UI</li>
+      </ul>
+    </li>
+
+  </ol>
+
+  <br>
+  <h4>Часть III. Расширенные возможности Selenoid для больших кластеров</h4>
+  <ol>
+    <li class="li-padding">Дополнительные поля в конфигурационном файле
+      <br>
+      <ul class="li-padding">
+        <li>Volumes</li>
+        <li>Переменные окружения</li>
+        <li>Tmpfs</li>
+        <li>Записи в /etc/hosts</li>
+        <li>ShmSize</li>
+      </ul>
+    </li>
+    <li class="li-padding">Отправка логов в централизованное хранилище логов
+      <br>
+      <ul class="li-padding">
+        <li>Зачем это нужно</li>
+        <li>Как настроить</li>
+      </ul>
+    </li>
+    <li class="li-padding">Отправка метрик в централизованное хранилище
+      <br>
+      <ul class="li-padding">
+        <li>/status API</li>
+        <li>Настраиваем Telegraf для отправки метрик</li>
+        <li>Создаем графики в Grafana</li>
+      </ul>
+    </li>
+    <li class="li-padding">Создание своих образов с браузерами
+      <br>
+      <ul class="li-padding">
+        <li>Что внутри образа</li>
+        <li>Готовые образы с браузерами</li>
+        <li>Как сделать свой образ</li>
+      </ul>
+    </li>
+  </ol>
+
 
   <p id="register"/>
   <br>
