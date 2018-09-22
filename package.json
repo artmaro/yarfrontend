@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "description": "YappiDays.ru site.",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
+    "develop": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "license": "MIT",

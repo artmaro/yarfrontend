@@ -89,6 +89,14 @@ module.exports = env => {
           {
             from: './.gitignore',
             to: './'
+          },
+          {
+            from: './LICENSE',
+            to: './'
+          },
+          {
+            from: './README.md',
+            to: './'
           }
         ]
       ),
