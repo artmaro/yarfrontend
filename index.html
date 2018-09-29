@@ -41,7 +41,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="/">
-      <img class="yappi-logo" src="/assets/logo.svg?e0a1a73fc7de79d8c793faf13fc20a29">
+      <img class="yappi-logo" src="/assets/logo.svg?e2f41067774909f40d7f424401e0e447">
     </a>
     <button
       class="navbar-toggler navbar-toggler-right"
@@ -344,6 +344,20 @@
           <p class="text-muted">Arealidea</p>
         </div>
       </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModalIlmov">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-user-o fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="/assets/ilmov.jpg?cac8381ef2c16eeff3fa4f9912b75d38" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Владимир Ильмов</h4>
+          <p class="text-muted"></p>
+        </div>
+      </div>
     </div>
     <div class="row justify-content-center">
       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/talks.html">Смотреть все доклады</a>
@@ -387,7 +401,7 @@
           <div class="schedule-time">10:30</div>
           <div class="schedule-col">
             <div class="schedule-legend">Зал 1</div>
-            <div class="schedule-title">Тема доклада уточняется</div>
+            <div class="schedule-title"><a href="/talks.html#zinovev">Open Source Distributed Machine Learning Library для Apache Ignite</a></div>
             <div class="schedule-speaker">Алексей Зиновьев, EPAM</div>
           </div>
           <div class="schedule-col">
@@ -494,9 +508,18 @@
         </div>
         <div class="schedule-row schedule-talk">
           <div class="schedule-time">18:30</div>
-          <div class="schedule-col schedule-col-single">
+          <div class="schedule-col">
             <div class="schedule-legend">Зал 1</div>
-            <div class="schedule-unconf ">Доклад уточняется</div>
+            <div class="schedule-title"><a href="/talks.html#ilmov">Cloud native Netflix сервисы и Kubernetes</a></div>
+            <div class="schedule-speaker">Владимир Ильмов</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-legend">Зал 2</div>
+            <div class="schedule-unconf">Доклад уточняется</div>
+          </div>
+          <div class="schedule-col">
+            <div class="schedule-legend">Зал 3</div>
+            <div class="schedule-unconf">Доклад уточняется</div>
           </div>
         </div>
         <div class="schedule-row schedule-break">
@@ -598,6 +621,11 @@
           <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/pvs-studio.png?310f6cd1e495012df30e547a5eed45bd" alt="">
         </a>
       </div>
+      <div class="col">
+        <a href="https://vk.com/pizzafabit" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/pf_it.png?ed06ecbea0d78b0504acefbb560469c9" alt="">
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -618,7 +646,7 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a target="_blank" href="https://t.me/yappidaysconf">
+            <a target="_blank" href="http://t-do.ru/yappidaysconf">
               <i class="fa fa-telegram"></i>
             </a>
           </li>
@@ -1162,6 +1190,46 @@
                 <p>Обманом вовлекает сотрудников в процесс изучения новых технологий.
                 Фанат рефакторинга и чтения бумажных книг.
                 <br/>
+
+              <br/>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Назад
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModalIlmov" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Владимир Ильмов</h2>
+              <img
+                class="speaker-photo img-fluid d-block mx-auto"
+                src="/assets/ilmov.jpg?cac8381ef2c16eeff3fa4f9912b75d38"
+                alt="Владимир Ильмов"
+              >
+              <p>Закончил ЯрГУ им Демидова в 2004 году.<br>
+              До 2000 года писал программы на С++/С под платформы Amiga, MS-DOS. В 2001 году перешёл на web, верстать под Netscape и изучал DHTML. Потом perl и php.<br>
+              Профессионально Java занимаюсь с 2004 года, в основном J2EE.<br>
+              Участвовал в разработке нескольких версий личного кабинета Beeline (https://uslugi.beeline.ru и позднее https://my.beeline.ru).<br>
+              В 2007 году разработал систему предварительной записи и управления очередью для ГИБДД и ФМС в г .Ярославль (http://svc.76.gibdd.ru).<br>
+              Интересуюсь сетевыми технологиями, настройкой серверов и распределенными системами.<br>
+                Живу в Амстердаме.</p>
 
               <br/>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
