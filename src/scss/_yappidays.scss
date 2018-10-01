@@ -78,3 +78,27 @@
 .btn-grey {
   background-color: $gray-300;
 }
+
+.star-icon {
+
+
+    float: left;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-image: url('../assets/icons/star.png');
+      background-size: contain;
+      width: 12px;
+      height: 12px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 3px;
+      top: 12px;
+    }
+
+  @media only screen and (max-width: 990px) {
+    display: none;
+  }
+
+}
