@@ -111,12 +111,179 @@
 </header>
 
 
-  <p></p>
-<div style="padding: 2em 30px;">
+  <div style="padding: 3em 30px; text-align: center;">
   <h2>Реши задачу - получи скидку</h2>
-  <div>Тут будет текст задачи.</div>
+  <div class="card">
+    <div class="text">
+      <span>
+        Лягушонок хочет перебраться через реку. Изначально он расположен на одном берегу реки (позиция 0) и хочет попасть на противоположный берег (позиция Х+1). С большого дерева падают листья на поверхность воды, по которым лягушонок сможет прыгать.
+        <br>
+        <br>
+        На входе вы получаете массив А из N целых чисел, которые представляют падающие листья. А[K] представляет позицию, где один лист упал в момент времени K. Время измеряется в секундах.
+        <br>
+        <br>
+        Ваша задача найти наиоблее раннее время, когда лягушонок перепрыгнет на другой берег реки. Лягушонок пересечет реку, когда на каждой позиции от 1 до Х будет плавать лист. Таким образом мы хотим найти самый ранний момент, когда все позиции от 1 до Х покрыты листьями. Предполагаем, что скоростью реки можно пренебречь, то есть листя не меняют позицию после того, как упали с дерева.
+        <br>
+        <br>
+        Например, ширина реки 5 (Х = 5) и листья падают в такой последовательности с течением времени (массив А):
+        <br>
+        <br>
+        A[0] = 1
+        <br>
+        A[1] = 3
+        <br>
+        A[2] = 1
+        <br>
+        A[3] = 4
+        <br>
+        A[4] = 2
+        <br>
+        A[5] = 3
+        <br>
+        A[6] = 5
+        <br>
+        A[7] = 4
+        <br>
+        <br>
+        На секунде 6, лист падает в точку 5. Это наиболее ранее время, когда на каждой позиции до другого берега появились листья.
+        <br>
+        <br>
+        Напишите функцию
+        <br>
+        <br>
+        function solution(X, A);
+        <br>
+        <br>
+        которая получает непустой массив А размером N и число Х, определяющее ширину реки. Функция должна вернуть, с какой секунды лягушонок попадет на другой берег.
+        <br>
+        <br>
+        Если лягушонок не сможет добраться до противоположного берега, функция должна вернуть -1.
+        <br>
+        <br>
+        В примере выше функция должна вернуть значение 6.
+        <br>
+        <br>
+        N и X целые числа в диапазоне [1..100,000];
+        каждое значение в массиве A это целое число в диапазоне [1..X].
+      </span>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Это победа!</h2>
+                <img style="width: 100%" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1531451526/180712-Weill--The-Creator-of-Pepe-hero_uionjj"/>
+                <div class="card" style="padding: 20px">
+                  Вот твой код: PEPPE_LIKES_YAPPI
+                  <br>
+                  Используй его при покупке студенческого билета
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Грусть печаль :((</h2>
+                <img style="width: 100%" src="https://images.discordapp.net/avatars/411851868810248194/50268a886f992d78127acf0d109ff08f.png?size=512"/>
+                <div class="card" style="padding: 20px">
+                  Попробуй еще раз
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="editor">function solution(x, a) {
+    return 6;
+}</div>
+  <br>
+  <br>
+  <a id="button" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Проверить решение</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js"></script>
+  <script>
+    const editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+
+    const button = document.getElementById('button');
+    button.onclick = () => {
+      // Hi younger hacker
+      /*
+            }{0Tт@БЬ)Ч
+                   `````...````
+         ``--+osshyyyss+/--``
+       .`//yyddddddddddhhsy//``
+     -.sshhmddmmdmmdm    ddhyoo..
+   ``o+ddmm      dmdmsyyy  ddhy//``
+   --hdddmdyyhyhymmNNmNmmsyddhdsy--
+ ``ooddmdmdNN////mm////NNmmddddhh/+``
+ ``yyddmmNmMM  . mm  . MMmNddddhhos``
+ ..ddmddmNNMM    mm    MMNNddddhhsy..
+ `-dddddmmmMNMNMNmmNMNMNMmmddddhhyy..
+ -.NNmNmmmmmmmmmmdmmmmmmmdmdmddhhhh`.
+ .`MNMMNNNNNNmmmmdmdmmmddmmNNmNmmmd..
+ .`MMMMMMMMMNNNNNNNNNNNNNMMMMMMMMNN`.
+   mdMMMMMMMMMMMMMMMMMMMMMMMMMMMMos
+   o+NNMMMM  MMMMMMMMMMMM  MMMMNM..
+   .`NNMMMMMM            MMMMMMmN``
+   ` NmMMMMMMooooooooooooMMMMNMos
+     ooMmMMMMMMMMMMMMMMMMMMMMmN``
+     ``soNMMMMMMMMMMMMMMMMMNNos
+       .`NNMMMMMMMMMMMMMMMMmN`.
+       ``NmMMMMMMMMMMMMMMMMyh `
+        `hoMMMMMMMMMMMMMMNN:/
+         :.NNmNMMMMMMMMNNmd..
+         ..ddhhNMMMMMNNmmsy `
+         ..yh//NNMMMMNNss/+
+         ` oo.-NNMMNMdm````
+           ``.`NNMMMMyy `
+               mmNMmN// `
+               o+NNss
+               -.dm``
+                `oo``
+                ``
+               `
+       */
+
+      const codeResult = eval(editor.getValue() + ` solution(4, [2, 3, 2, 2, 1, 4, 3, 1, 4])`);
+      if (codeResult === parseInt((parseInt('1001010001011001001100101010', 2) & 133852373).toString().split('')[5], 10)) {
+        $('#portfolioModal1').modal();
+      } else {
+        $('#portfolioModal2').modal();
+      }
+    };
+  </script>
 </div>
-<p></p>
 
 
   <script
