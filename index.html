@@ -44,7 +44,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="/">
-      <img class="yappi-logo" src="/assets/logo.svg?e0a1a73fc7de79d8c793faf13fc20a29">
+      <img class="yappi-logo" src="/assets/logo.svg?e2f41067774909f40d7f424401e0e447">
     </a>
     <button
       class="navbar-toggler navbar-toggler-right"
@@ -360,7 +360,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Владимир Ильмов</h4>
-          <p class="text-muted"></p>
+          <p class="text-muted">Elsevier</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -377,7 +377,37 @@
           <p class="text-muted">Positive Technologies</p>
         </div>
       </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModalKabischev">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-user-o fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid lazyload" src="/assets/kabischev.jpg?e74a0cc460c88d435ae3335e4d23b148" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Михаил Кабищев</h4>
+          <p class="text-muted">ozon.ru</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModalEvteev">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-user-o fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid lazyload" src="/assets/evteev.jpg?2900fc13d4ac7fbefe7c1fb887728e78" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Андрей Евтеев</h4>
+          <p class="text-muted">CDNvideo</p>
+        </div>
+      </div>
     </div>
+
+  </div>
     <div class="row justify-content-center">
       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/talks.html">Смотреть все доклады</a>
     </div>
@@ -487,7 +517,7 @@
           <div class="schedule-col">
             <div class="schedule-legend">Зал 1</div>
             <div class="schedule-title"><a href="/talks.html#bichuk-fts">Как устроен полнотекстовый поиск</a></div>
-            <div class="schedule-speaker">Алексей Бичук</div>
+            <div class="schedule-speaker">Алексей Бичук, HH.RU</div>
           </div>
           <div class="schedule-col">
             <div class="schedule-legend">Зал 2</div>
@@ -497,7 +527,7 @@
           <div class="schedule-col">
             <div class="schedule-legend">Зал 3</div>
             <div class="schedule-title"><a href="/talks.html#kopylov">Docker Driven Development</a></div>
-            <div class="schedule-speaker">Андрей Копылов</div>
+            <div class="schedule-speaker">Андрей Копылов, Arealidea</div>
           </div>
         </div>
         <div class="schedule-row schedule-break">
@@ -518,7 +548,8 @@
           </div>
           <div class="schedule-col">
             <div class="schedule-legend">Зал 3</div>
-            <div class="schedule-unconf">Доклад уточняется</div>
+            <div class="schedule-title"><a href="/talks.html#kabischev">Distributed Tracing 101</a></div>
+            <div class="schedule-speaker">Михаил Кабищев, ozon.ru</div>
           </div>
         </div>
         <div class="schedule-row schedule-break">
@@ -529,17 +560,18 @@
           <div class="schedule-time">18:30</div>
           <div class="schedule-col">
             <div class="schedule-legend">Зал 1</div>
-            <div class="schedule-title"><a href="/talks.html#ilmov">Cloud native Netflix сервисы и Kubernetes</a></div>
-            <div class="schedule-speaker">Владимир Ильмов</div>
+            <div class="schedule-title"><a href="/talks.html#ilmov">Микросервисы Netflix и Kubernetes</a></div>
+            <div class="schedule-speaker">Владимир Ильмов, Elsevier</div>
           </div>
           <div class="schedule-col">
             <div class="schedule-legend">Зал 2</div>
             <div class="schedule-title"><a href="/talks.html#zhukov">Безопасная разработка на потоке, или Как улучшить безопасность ПО без отрыва от производства</a></div>
-            <div class="schedule-speaker">Алексей Жуков</div>
+            <div class="schedule-speaker">Алексей Жуков, Positive Technologies</div>
           </div>
           <div class="schedule-col">
             <div class="schedule-legend">Зал 3</div>
-            <div class="schedule-unconf">Доклад уточняется</div>
+            <div class="schedule-title"><a href="/talks.html#evteev">Ещё один подход к предоставлению Kubernetes кластеров как PaaS</a></div>
+            <div class="schedule-speaker">Андрей Евтеев, CDNvideo</div>
           </div>
         </div>
         <div class="schedule-row schedule-break">
@@ -608,19 +640,27 @@
 
   <!-- Clients -->
 <section class="py-6">
-  <div class="container">
+  <div class="container sponsor-container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Спонсоры</h2>
+        <h2 class="section-heading">Золотой спонсор</h2>
         <h3 class="section-subheading text-muted"></h3>
       </div>
     </div>
     <div class="sponsor-mobile row">
       <div class="col ">
         <a href="http://akvelon.com" target="_blank">
-          <img class="yd-spon-logo d-block mx-auto" src="/assets/akvelon.png?27bc4d1923483d53bf328d6e6c12b2e4" alt="">
+          <img class="yd-spon-gold d-block mx-auto" src="/assets/akvelon.png?27bc4d1923483d53bf328d6e6c12b2e4" alt="">
         </a>
       </div>
+    </div>
+    <div class="row row-top-spacing">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Спонсоры</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="sponsor-mobile row">
       <div class="col">
         <a href="http://solit-clouds.ru/" target="_blank" >
           <img class="yd-spon-logo d-block mx-auto" src="/assets/solit.png?e203c0bedd0be1069936a726aeca8432" alt="">
@@ -636,6 +676,8 @@
           <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/confirmit.jpg?9d29bcfb794547753aaea10cf59a9b44" alt="">
         </a>
       </div>
+    </div>
+    <div class="sponsor-mobile row row-top-spacing">
       <div class="col">
         <a href="https://www.viva64.com" target="_blank">
           <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/pvs-studio.png?310f6cd1e495012df30e547a5eed45bd" alt="">
@@ -644,6 +686,46 @@
       <div class="col">
         <a href="https://vk.com/pizzafabit" target="_blank">
           <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/pf_it.jpg?504fc8890cc79e302848e461e90aa07b" alt="">
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://tensor.ru/" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/tensor.png?178ccc25fc3821b03ee724881a253779" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="sponsor-mobile row row-top-spacing">
+      <div class="col">
+        <a href="https://cashoff.ru" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/cash_logo.png?2796dee2905652e4aa19f218f0b524d8" alt="">
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.mercury1.co.uk" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/mercury1-sml.png?a325650be0bca187ab97a253860cd19f" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="row row-top-spacing">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Инфопартнеры</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="sponsor-mobile row">
+      <div class="col">
+        <a href="http://it-events.com/" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/it-events-logo.png?b4abd7ae2f427d303a1e449d0f85ef5a" alt="">
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://developerslife.ru" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/devlife-logo.png?fc37927bdda317b6631e80379e41e018" alt="">
+        </a>
+      </div>
+      <div class="col">
+        <a href="http://obucharium.com/" target="_blank">
+          <img style="height: 60px; width: inherit;" class="yd-spon-logo d-block mx-auto" src="/assets/obucharium.jpg?7da8585772c990d05e74d15767cb6ed6" alt="">
         </a>
       </div>
     </div>
@@ -1286,6 +1368,77 @@
               <p>Эксперт отдела систем защиты приложений Positive Technologies. Родился в 1975 году. Окончил Московский государственный институт электронной техники по специальности «Программное обеспечение вычислительных систем». Работал инженером-программистом в компаниях ЭЛВИС-ПЛЮС (с 1996 по 1998 год), TrustWorks Systems B.V.С (с 1999 по 2002 год), «Объектные технологии лимитед» (ведущий инженер-программист, с 2003 по 2006 год). Далее в течение девяти лет, с 2007 по 2016 год, проработал в ЭЛВИС-ПЛЮС ведущим специалистом и начальником отдела решений по управлению доступом. С 2016 года присоединился к Positive Technologies. Является ведущим экспертом в области защиты приложений и активно участвует в развитии продуктов направления Application Security. В зону ответственности также входит взаимодействие с заказчиками и партнерами компании в части реализации пилотных проектов по инструментальному аудиту безопасности приложений.
                 <br/>
 
+              <br/>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Назад
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModalKabischev" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Михаил Кабищев</h2>
+              <img
+                class="speaker-photo img-fluid d-block mx-auto"
+                src="/assets/kabischev.jpg?e74a0cc460c88d435ae3335e4d23b148"
+                alt="Михаил Кабищев"
+              >
+              <p>Site Reliability Engineer в <a href="https://www.ozon.ru/" target="_blank">ozon.ru</a>. С 2010 года работал в разных сферах: Wikimart, Lingualeo, Lazada, Juno/Gett. Последние 4 года занимаюсь платформенной разработкой. Лидер Минского go-комьюнити и организатор GoWayFest конференций.
+                <br/>
+
+              <div style="position:relative;height:0;padding-bottom:56.27%"><iframe src="https://www.youtube.com/embed/UC9db1-SLyM?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+              <br/>
+              <br/>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>
+                Назад
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModalEvteev" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Андрей Евтеев</h2>
+              <img
+                class="speaker-photo img-fluid d-block mx-auto"
+                src="/assets/evteev.jpg?2900fc13d4ac7fbefe7c1fb887728e78"
+                alt="Андрей Евтеев"
+              >
+              <p>Строитель облаков со стажем, технический руководитель проекта GPUcloud</p>
+              <br/>
               <br/>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fa fa-times"></i>

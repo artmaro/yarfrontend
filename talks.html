@@ -44,7 +44,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="/">
-      <img class="yappi-logo" src="/assets/logo.svg?e0a1a73fc7de79d8c793faf13fc20a29">
+      <img class="yappi-logo" src="/assets/logo.svg?e2f41067774909f40d7f424401e0e447">
     </a>
     <button
       class="navbar-toggler navbar-toggler-right"
@@ -397,7 +397,7 @@
   <div class="talk-container" id="ilmov">
     <img class="avatar" src="/assets/ilmov-small.jpg?253e412ac421a9f7c8ae1cc17d02be72" alt="">
     <div class="talk-area">
-      <h4>Cloud native Netflix сервисы и Kubernetes</h4>
+      <h4>Микросервисы Netflix и Kubernetes</h4>
       <h5>Владимир Ильмов</h5>
       <div class="about">
         Популярность облачных сервисов очень выросла за последние несколько лет, в данном докладе я сделаю обзор решений для разработки облачных сервисов.<br>
@@ -427,6 +427,56 @@
       <div class="labels">
         <div>Информационная безопасность</div>
         <div>Continuous Integration</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="talk-container" id="kabischev">
+    <img class="avatar" src="/assets/kabischev.jpg?e74a0cc460c88d435ae3335e4d23b148" alt="">
+    <div class="talk-area">
+      <h4>Distributed Tracing 101</h4>
+      <h5>Михаил Кабищев</h5>
+      <div class="about">
+        В последнее время тема distributed tracing становится все более и более популярной. В этом докладе я расскажу про:
+        <br>
+        <ul>
+          <li>историю появления систем для distributed tracing</li>
+          <li>opentracing / OpenCencus</li>
+          <li>какие задачи можно и нельзя решить с его помощью</li>
+          <li>практические советы по внедрению distributed tracing в вашу систему</li>
+        </ul><br>
+
+      </div>
+      <div class="labels">
+        <div>Распределенные системы</div>
+        <div>Мониторинг</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="talk-container" id="evteev">
+    <img class="avatar" src="/assets/evteev.jpg?2900fc13d4ac7fbefe7c1fb887728e78" alt="">
+    <div class="talk-area">
+      <h4>Ещё один подход к предоставлению Kubernetes кластеров как PaaS</h4>
+      <h5>Андрей Евтеев</h5>
+      <div class="about">
+        Сейчас возрастает популярность микросервисной архитектуры. Мы разработали платформу оркестрации на основе Kubernetes и Docker для запуска микросервисных приложений и их быстрого развертывания на несколько регионов. <br>
+        Для этого мы добавили от себя:<br>
+        <ul>
+          <li>несколько классов хранилищ,</li>
+          <li>балансировку на двух уровнях,</li>
+          <li>централизованный сбор и обработку логов и визуализацию с помощью kibana</li>
+          <li>сделали возможным сбор широкого набора метрик (CPU, MEM, storage, network) c визуализацией,</li>
+          <li>Docker VM</li>
+          <li>удобный дашборд для пользователей</li>
+        </ul><br>
+        И мы расскажем, как мы это сделали и зачем...<br>
+
+      </div>
+      <div class="labels">
+        <div>Распределенные системы</div>
+        <div>Kubernetes</div>
+        <div>Docker</div>
       </div>
     </div>
   </div>
