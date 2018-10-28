@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Экспресс курс Алексея Рагозина - Профилирование Java приложений</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Custom fonts for this template -->
+<link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="./css/style.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="Description" content="yappidays конференция для разработчиков">
+
+<script src="./js/lazyload.js"></script>
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-293578-bs3e5"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-293578-bs3e5" style="position:fixed; left:-999px;" alt=""/></noscript>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1474765465925162');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1474765465925162&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter50727913 = new Ya.Metrika2({
+          id:50727913,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true
+        });
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50727913" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+  </head>
+
+  <body id="page-top">
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/">
+      <img class="yappi-logo" src="/assets/logo.svg?e2f41067774909f40d7f424401e0e447">
+    </a>
+    <button
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/">Конференция YappiDays'18</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#whatabout">Стоимость</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#author">Об авторе</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#program">Программа</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#register">Купить билет</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- Header -->
+<header class="masthead masthead-short">
+  <div class="container">
+    <div class="intro-text intro-text-short">
+      <div class="intro-heading text-uppercase"> Профилирование Java приложений</div>
+      <div class="intro-lead-in">Курс Алексея Рагозина <br>7 декабря 2018 </div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#register">Купить билет</a>
+    </div>
+  </div>
+</header>
+
+
+  <p></p>
+<div class="training-text-container">
+  <h3 class="text-uppercase">Описание</h3>
+  <br>
+  <p>Профайлер - инструмент, используемый при решение проблем связанных с производительностью и стабильностью программного обеспечения. Профайлер может применяться как при разработке, так и при поддержке ПО.</p>
+
+  <p>Данный курс ставит перед собой следующие задачи</p>
+  <ul>
+    <li>продемонстрировать работу с бесплатными профайлерами, идущими
+      в комплекте с JDK - Visual VM, Java Flight Recorder и другими инструментами
+    </li>
+    <li>представить аудитории методы эффективного применения инструментов профилирования в контексте решения практических задач</li>
+    <li>закрепить знания практической работой со специально подготовленными примерами проблемного кода</li>
+  </ul>
+
+  <p>Курс комбинирует теоретические блоки и практические упражнения, которые чередуются по мере изложения материала.</p>
+
+  <p id="whatabout"/>
+  <br>
+  <h3 class="text-uppercase" >Условия участия</h3>
+  <br>
+  <p>Стоимость 8000 руб. До 7 ноября можно записаться на курс по сниженной цене 6000 руб.</p>
+  <p>Способ оплаты: по банковской карте онлайн или наличными на месте.</p>
+  <p>Продолжительность тренинга 6 учебных часов.</p>
+  <p>Для регистрации используйте форму ниже. Регистрация обязательна.</p>
+
+
+  <br>
+  <h3 class="text-uppercase" >Ценность курса</h3>
+  <br>
+  <p>На практике задачи требующие применения профайлера встречаются не часто. По этой причине у разработчиков обычно нет возможности научиться эффективно владеть этим инструментом на собственном опыте.
+  </p>
+
+  <p>С другой стороны, эффективное использование профайлера в критической ситуации может драматически сократить время решения проблемы (от недель и месяцев до считанных дней).</p>
+
+  <p>Данный учебный курс даёт разработчику ключевые знания и навыки для эффективного применения профайлера в своей работе.</p>
+
+  <br>
+  <h3 class="text-uppercase" >Предполагаемая аудитория</h3>
+  Разработчики / архитекторы Java (всех уровней подготовки), Big Data инженеры, SRE (Site Reliability Engineer)
+
+  <p id="author"/>
+  <br>
+  <h3 class="text-uppercase">Автор тренинга</h3>
+  <br>
+  <br>
+  <img
+    class="speaker-photo img-fluid d-block mx-auto"
+    src="/assets/ragozin.jpg?1c8929f5669398ad937741192c01aa9e"
+    alt="Алексей Рагозин"
+  >
+  <br>
+  <br>
+  <p>Алексей Рагозин специализируется на разработке высоконагруженных распределённых систем на платформе Java. За более чем 10 лет в индустрии он собрал опыт разработки информационных систем в таких вертикалях как финансы, телеком, e-commerce и здравоохранение. С 2009 по 2011 возглавлял практику внедрения in-memory data grid решений в компании GridDynamics. В октябре 2011 года перешёл в Deustche Bank, где является ведущим специалистом в области технологий распределённого кэширования. Активный участник российских конференций, посвящённых разработке программного обеспечения и высокопроизводительных информационным системам.</p>
+  <p>Источник инфорации:
+    <a target="_blank" href="https://jug.ru/speakers/aleksey-ragozin/">https://jug.ru/speakers/aleksey-ragozin/</a>
+  </p>
+  <div style="position:relative;height:0;padding-bottom:30.26%">
+    <iframe
+      src="https://www.youtube.com/embed/Sz356YoNHZg?ecver=2"
+      style="position:absolute;width:100%;height:100%;left:0"
+      width="320"
+      height="180"
+      frameborder="0"
+      allow="autoplay;
+                  encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <p>Другие видео доступны на странице
+    <a target="_blank" href="https://www.lektorium.tv/speaker/3742">лекториума.</a>
+  </p>
+
+  <p id="program"/>
+  <br>
+  <h3 class="text-uppercase">Программа семинара</h3>
+  <br>
+
+  <p><b>Секция 1</b></p>
+  <p>Обзор задачи, решаемых профайлерами. Дерево поиска проблем производительности Java приложений. Обзор возможностей VisualVM и Mission Control.</p>
+
+  <p><b>Секция 2</b></p>
+  <p>Использование VisualVM для поиска "горячего" кода методом сэмплирования. Достоинства и ограничения профилирования сэмплированием.</p>
+
+  <p><b>Секция 3</b></p>
+  <p>Обзор возможностей Mission Control, сравнение с другими профайлерами.</p>
+
+  <p><b>Секция 4</b></p>
+  <p>Использование Mission Control для поиска "горячего" кода. Сравнение Mission Control и Visual VM.</p>
+
+  <p><b>Секция 5</b></p>
+  <p>Использование возможностей трасировки Visual VM и BTrace. Комбинирование сэмплирования и трассировки.</p>
+
+  <p><b>Секция 5</b></p>
+  <p>Обнаружение "клинча" (deadlock) средствами профайлера. Заключение.</p>
+
+  <br>
+  <h3 class="text-uppercase" >Список ПО для практической части</h3>
+  <p>Для работы с упражнениями участникам курса необходим компьютер (Windows, Linux, MacOS).</p>
+  <p>Следующее ПО должно быть установлено у участников тренинга.</p>
+
+  <ul>
+    <li>комплект разработки Java (JDK) - версия не ниже 8u144</li>
+    <li>Apache Maven - версия не ниже 3.4</li>
+    <li>любой клиент git с поддержкой  интерфейса командной строки</li>
+    <li>любая интегрированная среда разработки Java</li>
+  </ul>
+
+  <p id="register"/>
+  <br>
+  <h3 class="text-uppercase">Купить билет
+  </h3>
+  <br>
+
+  <a href="https://yappidays.timepad.ru/event/841549/" data-twf-placeholder="yes">Перейти к заказу билетов</a><script type="text/javascript" async="async" defer="defer" charset="UTF-8" src="https://timepad.ru/js/tpwf/loader/min/loader.js" data-timepad-customized="29906" data-twf2s-event--id="841549" data-timepad-widget-v2="event_register"></script>
+
+  <br>
+  <h3 class="text-uppercase">Время и место
+  </h3>
+  <br>
+
+  <p>7 декабря 2018, с 11.00 до 19.00 по адресу: г. Ярославль, Октябрьский переулок, 3, офис 207</p>
+  <p>При возникновении любых вопросов пишите <a href="https://vk.com/evgeniy.kokuykin" target="_blank">Евгению Кокуйкину</a>.</p>
+
+
+</div>
+</div>
+<p></p>
+
+
+  <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4c460d0e9f7a1a7476450a9892d3a347716da393392ad7e33c59bced77d69a95&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
+
+
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">YappiDays 2018</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://vk.com/yappidays">
+              <i class="fa fa-vk"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="http://t-do.ru/yappidaysconf">
+              <i class="fa fa-telegram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.facebook.com/yappidaysconf">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="/privacy.html">Политика обработки персональных данных</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="./js/agency.js"></script>
+
+
+  </body>
+
+</html>
