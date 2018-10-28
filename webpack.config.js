@@ -119,6 +119,7 @@ module.exports = env => {
       generateHtmlFile('src/html/privacy-template.html', 'privacy.html'),
       generateHtmlFile('src/html/cfp-template.html', 'cfp.html'),
       generateHtmlFile('src/html/training-ml-template.html', 'training-ml.html'),
+      generateHtmlFile('src/html/training-perf-template.html', 'training-perf.html'),
       generateHtmlFile('src/html/training-sel-template.html', 'training-sel.html'),
       generateHtmlFile('src/html/talks-template.html', 'talks.html'),
       generateHtmlFile('src/html/task-template.html', 'task.html'),
